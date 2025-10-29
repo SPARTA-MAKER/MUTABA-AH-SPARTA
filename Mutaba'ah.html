@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutaba'ah Sparta - Track Your Spiritual Journey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #ffffff 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .floating-form {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        .floating-form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .hero-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <i data-feather="shield" class="w-8 h-8"></i>
+                <span class="text-2xl font-bold">Mutaba'ah Sparta</span>
+            </div>
+            
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-20">
+        <div class="hero-section p-8 md:p-12 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">MUTABA'AH <span class="text-yellow-300">SPARTA</h1>
+            <p class="text-xl mb-8 opacity-90">AYOO PANTAU TERUS IBADAHMU!!!!</p>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWPdx3ALx5_LzA-Okc6ZpepaF3hTiO9eX1Gg8cw1fjEtHVtw/viewform?usp=header" target="_blank" class="flex items-center">
+    Get Started <i data-feather="arrow-right" class="ml-2"></i>
+  </a>
+</button>
+
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">MANFAAT MENGISI MUTABA'AH</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="feature-card p-8 rounded-xl">
+                <div class="bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <i data-feather="check-circle" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Meningkatkan Disiplin Ibadah</h3>
+                <p class="opacity-80">Membantu kamu menjaga konsistensi ibadah harian seperti salat, tilawah, dan dzikir dengan sistem pencatatan yang teratur.</p>
+            </div>
+            <div class="feature-card p-8 rounded-xl">
+                <div class="bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <i data-feather="trending-up" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Menumbuhkan Kesadaran Diri </h3>
+                <p class="opacity-80">Melatih introspeksi dan kesadaran akan kekuatan serta kelemahan diri dalam menjalankan ibadah setiap hari.</p>
+            </div>
+            <div class="feature-card p-8 rounded-xl">
+                <div class="bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <i data-feather="users" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Memantau Perkembangan Spiritual</h3>
+                <p class="opacity-80">Memberi gambaran visual dan statistik tentang peningkatan ibadah, sehingga kamu bisa menilai perkembangan dirimu secara nyata.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 bg-opacity-50 py-8 mt-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="shield" class="w-6 h-6"></i>
+                        <span class="text-xl font-bold">Mutaba'ah Sparta</span>
+                    </div>
+                    <p class="mt-2 opacity-80">Dekatkan diri kepada Allah melalui kebiasaan kecil yang konsisten.</p>
+                </div>
+                <div class="flex space-x-6">
+                   <a href="https://www.instagram.com/smpitpermatamojokerto/"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-blue-700 mt-8 pt-8 text-center opacity-70">
+                <p>&copy; 2025 Mutaba'ah Sparta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleForm() {
+            const form = document.getElementById('formContainer');
+            form.classList.toggle('hidden');
+        }
+
+        // Close form when clicking outside
+        document.addEventListener('click', function(event) {
+            const formContainer = document.getElementById('formContainer');
+            const formButton = document.querySelector('.floating-form button');
+            
+            if (!formContainer.contains(event.target) && event.target !== formButton) {
+                formContainer.classList.add('hidden');
+            }
+        });
+
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
